@@ -2,4 +2,4 @@
 A project aimed at distinguishing genuine banknotes from counterfeit banknotes using logistic regression in Python
 
 
-Description of the project.
+Description of the project will be here soon...
