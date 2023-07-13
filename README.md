@@ -26,14 +26,14 @@ To assess the accuracy of the K-means clustering, I estimated the error rate. To
 :date: The second variant of this function, called '*predict_array*,' returns the results as a dataframe.
 
 <p align="center">
-  <img src="(https://github.com/Praemuntiacus/Separating_the_Sheep_from_the_Goats/blob/main/10_before_pca.jpg)" alt="before pca reduction">
+  <img src="https://github.com/Praemuntiacus/Separating_the_Sheep_from_the_Goats/blob/main/10_before_pca.jpg" alt="before pca reduction">
 </p>
 
 In order to understand the distinctions between the samples of true and false banknotes, I performed principal component analysis (**PCA**) here. After scaling the data, I added a new column to the dataset and assigned the values from the '*clusters*' object, which contains the cluster number for each banknote instance. The **parallel_coordinates()** function was particularly useful for visualizing the data after dimensionality reduction using **PCA**. According to the **parallel_coordinates()** diagram, reducing the dimensionality from six to five principal components is optimal.
 Determining the number of retained principal components that capture a sufficient amount of explained variance was done using the **Scree Plot** and **Eigenvalues**. These demonstrate that while the first principal component captures the majority of explained variance, it is insufficient to explain a reasonably high amount. Consequently, I retained the first four principal components for analysis and interpretation. The first factorial plan with PC1 and PC2 exhibits the best distinction between the two clusters of banknotes. The circle of correlations reveals that the first factorial plan reflects the parameters quite well (diagonal), while other parameters describing the height and length of banknotes are not fully represented in the first factorial plane. On the other hand, the second factorial plane, which reasonably represents the banknote heights according to the **circle of correlations**, is somewhat confusing and does not provide significant insights.
 
 <p align="center">
-  <img src="(https://github.com/Praemuntiacus/Separating_the_Sheep_from_the_Goats/blob/main/10_after_pca.jpg)" alt="after pca reduction">
+  <img src="https://github.com/Praemuntiacus/Separating_the_Sheep_from_the_Goats/blob/main/10_after_pca.jpg" alt="after pca reduction">
 </p>
 
 
