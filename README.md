@@ -30,7 +30,7 @@ To assess the accuracy of the K-means clustering, I estimated the error rate. To
 </p>
 
 <p align="center">
-  *Principal components before dimensionality reduction*
+  _Principal components before dimensionality reduction_
 </p>
 
 In order to understand the distinctions between the samples of true and false banknotes, I performed principal component analysis (**PCA**) here. After scaling the data, I added a new column to the dataset and assigned the values from the '*clusters*' object, which contains the cluster number for each banknote instance. The **parallel_coordinates()** function was particularly useful for visualizing the data after dimensionality reduction using **PCA**. According to the **parallel_coordinates()** diagram, reducing the dimensionality from six to five principal components is optimal.
@@ -41,7 +41,7 @@ Determining the number of retained principal components that capture a sufficien
 </p>
 
 <p align="center">
-  *Principal components after dimensionality reduction*
+  _Principal components after dimensionality reduction_
 </p>
 
 Furthermore, I present combined plots of factorial plans and the circle of correlations. To achieve this, I first normalized the PCA-transformed data, as the diameter of the hypersphere in the circle of correlations equals 1. This normalization ensures that all variables are on a comparable scale. Next, I overlaid the scatter diagram of the normalized data from the factorial plans and represented the variable projections using arrows.
