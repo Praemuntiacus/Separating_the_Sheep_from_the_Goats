@@ -41,7 +41,7 @@ Determining the number of retained principal components that capture a sufficien
 </p>
 
 <p align="center">
-  _Principal components after dimensionality reduction_
+  <i>Principal components after dimensionality reduction</i>
 </p>
 
 Furthermore, I present combined plots of factorial plans and the circle of correlations. To achieve this, I first normalized the PCA-transformed data, as the diameter of the hypersphere in the circle of correlations equals 1. This normalization ensures that all variables are on a comparable scale. Next, I overlaid the scatter diagram of the normalized data from the factorial plans and represented the variable projections using arrows.
