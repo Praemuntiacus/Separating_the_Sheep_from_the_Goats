@@ -19,7 +19,7 @@ To address the issue of missing data, I created separate subsets for complete an
 
 The histograms of the residuals from the linear models exhibited a normal distribution, implying unbiased and accurate models and supporting the validity of the model assumptions. The assumption of homoscedasticity was supported by the p-value of the *Breusch-Pagan test*, which indicated the absence of sufficient evidence to suggest heteroscedasticity in the regression model residuals. With a p-value greater than 0.05, we would fail to reject the null hypothesis of no heteroscedasticity. This finding suggests that there is insufficient evidence to conclude that the residuals exhibit significant heteroscedasticity. Homoscedasticity is an important assumption in linear regression analysis as it ensures valid statistical inference, reliable prediction intervals, and consistent interpretation of coefficients.
 
-:computer: Hence, the resulting regression models were suitable for predicting missing values of both true and false banknotes. The predicted values were assigned to the column with missing data in the incomplete dataframes, which were then appended to the complete data subsets.
+Hence, the resulting regression models were suitable for predicting missing values of both true and false banknotes. The predicted values were assigned to the column with missing data in the incomplete dataframes, which were then appended to the complete data subsets.
 ***
 
 **K-MEANS CLUSTERING**
@@ -34,7 +34,7 @@ To assess the accuracy of the K-means clustering, I estimated the error rate. To
 
 **FUNCTION DISTINGUISHING 'TRUE' AND 'FALSE' BANKNOTES**
 
-:floppy_disk: Using the results of clustering, I developed a *function* called '**predict_banknote**' based on the centroids defined by K-means clustering. This function calculates the distances between each banknote and the centroids, determines the closest centroid for each banknote, and prints the classification result based on the closest centroid. Here is an overview of the steps involved:
+Using the results of clustering, I developed a *function* called '**predict_banknote**' based on the centroids defined by K-means clustering. This function calculates the distances between each banknote and the centroids, determines the closest centroid for each banknote, and prints the classification result based on the closest centroid. Here is an overview of the steps involved:
 •	In the first line of the code, I converted the inputs (parameters of banknotes to verify their authentity) into **NumPy** arrays to facilitate manipulation using **NumPy**.
 •	Next, I created an empty list called '*distances*' to store the calculated distances between each banknote instance and the centroids.
 •	Then, I implemented a nested loop using '**for ... in**' to calculate the squared Euclidean distance between each banknote instance and each centroid. The calculated distances are appended to the 'distances' list.
@@ -51,6 +51,7 @@ To assess the accuracy of the K-means clustering, I estimated the error rate. To
 <p align="center">
   <i>Principal components before dimensionality reduction</i>
 </p>
+
 ***
 
 **PRINCIPAL COMPONENT ANALYSIS**
